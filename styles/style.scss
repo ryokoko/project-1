@@ -1,0 +1,203 @@
+$primary-bgColor: #513c5c;
+$secondary-bgColor: #dbd7d1;
+$primary-font-color: #fbf9f8;
+$secondary-font-color:#3a3632;
+$link-active-color: #f0cc71;
+
+/* shadow */
+$shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+
+$font-weight: 500;
+$nav-font-size: 18px;
+$breakpoint: 768px;
+
+
+body {
+    background-color: $secondary-bgColor;
+}
+@media (min-width: $breakpoint) {
+.header__section {
+    height: 50px;
+    width: 100%;
+    background-color: $primary-bgColor;
+
+}
+.header__name {
+    float: left;
+    color: $primary-font-color;
+    font-weight: $font-weight;
+    font-size: 35px;
+    margin-left: 40px;
+    /* padding-top: 5px; */
+    span {
+        color: $link-active-color;
+    }
+}
+.header__nav {
+    float: right;
+}
+#navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    li {
+        color: $primary-font-color;
+        padding: 12px 20px;
+        font-size: $nav-font-size;
+        a {
+            color:$primary-font-color;
+            &:active {
+                color: $link-active-color;
+            }
+        }
+    }
+}
+.header__mobile {
+    display: none;
+}
+}
+
+@media (max-width: $breakpoint) {
+    header {
+        display: none;
+    }
+    .header__mobile {
+        height: 60px;
+        width: 100%;
+        background-color: $primary-bgColor;
+        color: $primary-font-color;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    }
+    /* 记得用mixin来做header__name */
+    .header__name {
+        float: left;
+        color: $primary-font-color;
+        font-weight: $font-weight;
+        font-size: 35px;
+        margin-left: 40px;
+        padding-top: 5px;
+        span {
+            color: $link-active-color;
+        }
+    }
+    #sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: $primary-bgColor;
+        color: $primary-font-color;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        a {
+            padding: 10px;
+            display: block;
+            transition: 0.3s;
+            font-size: $nav-font-size;
+            color: $primary-font-color;
+            text-align: center;
+            &:hover {
+                color: $primary-font-color;
+            }
+            &:active {
+                color: $link-active-color;
+            }
+        }       
+    }
+    #btn--close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        margin-left: 50px;
+        font-size: $nav-font-size;
+    }
+    #btn--open {
+        float: right;
+        cursor: pointer;
+        margin: 10px 20px;
+        font-size: 30px;
+        &:hover {
+            color: $link-active-color;
+        }
+    }
+
+}
+.row {
+    padding: 20px;
+}
+.main {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: $primary-bgColor;
+    height: 600px;
+    .home__header {
+        width: 100%;
+        height: 40%;
+        background-image: url(../images/bg_2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0 0;
+        color: $secondary-font-color;
+        .header__photo {  
+            max-width: 200px;
+            margin: 0 auto;
+            border: 5px solid $secondary-bgColor;
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+    }
+    .social-media {
+        a {
+            font-size: 3rem;
+            color: $primary-bgColor;
+            padding: 1%;
+            transition: 0.2s;
+            text-decoration: none;
+            &:hover {
+                color:$secondary-bgColor;
+                text-decoration: none;
+                transform: translate(0, -2px);
+            }
+            &:visited {
+                text-decoration: none;
+            }
+        }
+    }
+    .title-block, .social-media {
+        text-align: center;
+        padding: 2%;
+    }
+    .about-me {
+        color:$primary-font-color;
+        span {
+            color:$link-active-color;
+        }
+
+    }
+    .about-details {
+                margin-top: 20px;
+                list-style-type: none;
+                li {
+                    margin: 10px;
+                    .details__key {
+                        min-width: 100px;
+                        color: $link-active-color;
+                        display: inline-block;
+                    }
+                    .details__value {
+                        color: $primary-font-color;
+                    }
+                }
+
+        }
+    }
+
+
+
