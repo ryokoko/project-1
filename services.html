@@ -7,15 +7,21 @@
     <meta name="description" content="PRO Card, professionals, artist, CV, resume">
     <meta name="keywords" content="vcard, responsive, retina, resume, artist, sculpture, portfolio">
     <meta name="author" content="stella">
-    <title>Document</title>
+    <title>Services</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <!-- Social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/style.css"></style>
 </head>
 <body>
+    <!-- Desktop Header -->
     <header>
         <div class="header__section">
             <div class="header__name">Stella <span>Li</span></div>
@@ -30,5 +36,18 @@
             </div>
         </div>
     </header>
+     <!-- Mobile & Tablet Header -->
+     <div class="header__mobile">
+        <div class="header__name">Stella <span>Li</span></div>
+        <div id="sidebar">
+            <a href='javascript:void(0)' id='btn--close'>&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="./resume.html">Resume</a>
+            <a href="./services.html">Services</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+        <div id="btn--open">&#9776;</div>        
+    </div>
 </body>
 </html>
