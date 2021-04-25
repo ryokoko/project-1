@@ -21,7 +21,6 @@ body {
     font-weight: 500;
     font-size: 35px;
     margin-left: 40px;
-    /* padding-top: 5px; */
   }
   .header__name span {
     color: #f0cc71;
@@ -89,7 +88,7 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     right: 0;
     background-color: #513c5c;
@@ -226,7 +225,7 @@ h2, h3 {
   border-radius: 10px 10px 0 0;
 }
 
-.resume__content {
+.content--general {
   background-color: #513c5c;
   color: #fbf9f8;
   width: 100%;
@@ -240,10 +239,10 @@ h2, h3 {
 
 .timeline__block {
   padding: 2% 5%;
-  margin: 30px;
   background-color: rgba(94, 87, 64, 0.5);
-  border-left: solid 2px #dbd7d1;
   position: relative;
+  border-left: solid 2px #dbd7d1;
+  margin: 30px;
 }
 .timeline__block:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
@@ -276,6 +275,72 @@ h2, h3 {
 .timeline__block .duration {
   border-right: 1px solid #dbd7d1;
   color: #f0cc71;
+}
+
+/* Services page */
+.service__block {
+  padding: 2% 5%;
+  background-color: rgba(94, 87, 64, 0.5);
+  position: relative;
+  min-height: 200px;
+  text-align: center;
+}
+.service__block:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+.service__block span, .service__block .service__title {
+  color: #f0cc71;
+}
+
+.client__block {
+  text-align: center;
+}
+.client__block a {
+  text-decoration: none;
+  color: #fbf9f8;
+}
+.client__block a:hover {
+  color: #f0cc71;
+}
+
+/* Contact page */
+#map {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.contact__details {
+  color: #fbf9f8;
+}
+.contact__details span {
+  margin-right: 10px;
+  color: #f0cc71;
+}
+
+form label {
+  color: #fbf9f8;
+  font-weight: normal;
+}
+form input, form textarea {
+  width: 70%;
+  padding: 5px 2%;
+  margin: 2% 0;
+  border-radius: 5px;
+  border: 1px solid #dbd7d1;
+}
+form input:focus, form textarea:focus {
+  border: 3px solid #f0cc71;
+}
+form input button, form textarea button {
+  float: right;
+  border-radius: 5px;
+  background-color: #dbd7d1;
+  color: #3a3632;
+}
+form input button:hover, form textarea button:hover {
+  background-color: #f0cc71;
+  color: #3a3632;
 }
 
 .footer {
