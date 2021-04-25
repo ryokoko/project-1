@@ -225,6 +225,7 @@ h2, h3 {
   border-radius: 10px 10px 0 0;
 }
 
+
 .content--general {
   background-color: #513c5c;
   color: #fbf9f8;
@@ -239,10 +240,11 @@ h2, h3 {
 
 .timeline__block {
   padding: 2% 5%;
-  background-color: rgba(94, 87, 64, 0.5);
-  position: relative;
-  border-left: solid 2px #dbd7d1;
+
   margin: 30px;
+  background-color: rgba(94, 87, 64, 0.5);
+  border-left: solid 2px #dbd7d1;
+  position: relative;
 }
 .timeline__block:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);

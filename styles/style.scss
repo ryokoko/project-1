@@ -12,6 +12,7 @@ $font-weight: 500;
 $nav-font-size: 18px;
 $breakpoint: 767px;
 
+
 @mixin small-module {
         padding: 2% 5%;
         background-color: $mask-color;
@@ -21,8 +22,6 @@ $breakpoint: 767px;
         }
     
 }
-
-
 
 * {
     box-sizing: border-box;
@@ -247,6 +246,7 @@ body {
 
     }
     .content--general {
+
         background-color: $primary-bgColor;
         color:$primary-font-color;
         width:100%;
@@ -261,6 +261,7 @@ body {
         @include small-module();
         border-left: solid 2px $secondary-bgColor;
         margin: 30px;
+
 
         &:before {
             content: "";
@@ -293,6 +294,7 @@ body {
         }
         
 }
+
 
     /* Services page */
     .service__block {
