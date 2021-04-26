@@ -7,15 +7,21 @@
     <meta name="description" content="PRO Card, professionals, artist, CV, resume">
     <meta name="keywords" content="vcard, responsive, retina, resume, artist, sculpture, portfolio">
     <meta name="author" content="stella">
-    <title>Document</title>
+    <title>Blog</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <!-- Social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css"></style>
+    
 </head>
 <body>
+    <!-- Desktop Header -->
     <header>
         <div class="header__section">
             <div class="header__name">Stella <span>Li</span></div>
@@ -30,5 +36,116 @@
             </div>
         </div>
     </header>
+    <!-- Mobile & Tablet Header -->
+    <div class="header__mobile">
+        <div class="header__name">Stella <span>Li</span></div>
+        <div id="sidebar">
+            <a href='javascript:void(0)' id='btn--close'>&times;</a>
+            <a href="./index.html">Home</a>
+            <a href="./resume.html">Resume</a>
+            <a href="./services.html">Services</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+        <div id="btn--open">&#9776;</div>        
+    </div>
+
+    <!-- Blog content -->
+    <div class="main">
+        <div class="header--general">
+            <h2>Blog</h2>
+        </div>
+        <div class="container content--general">
+            <div class="row">
+                <!-- Blog post 1 -->
+                <div class="blog__block col-sm-6">
+                    <div class="blog__media">
+                        <a href="#" target="_blank">
+                            <img src="./images/bg_1.jpg" alt="blog post image">
+                            <div class="mask"><p>View blog</p></div>
+                        </a>
+                        <div class="date">
+                            <p class="day">20</p>
+                            <p class="month">Mar</p>
+                        </div>
+                    </div>
+                    <div class="blog__title">
+                        <h4><a href="#" target="_blank">To the End - Blur</a></h4>
+                    </div>
+                </div>
+                <!-- Blog post 2 -->
+                <div class="blog__block col-sm-6">
+                    <div class="blog__media">
+                        <a href="#" target="_blank">
+                            <img src="./images/bg_1.jpg" alt="blog post image">
+                            <div class="mask"><p>View blog</p></div>
+                        </a>
+                        <div class="date">
+                            <p class="day">26</p>
+                            <p class="month">Mar</p>
+                        </div>
+                    </div>
+                    <div class="blog__title">
+                        <h4><a href="#" target="_blank">Toothpaste Kisses - The Maccabees</a></h4>
+                    </div>
+                </div>
+                 <!-- Blog post 3 -->
+                 <div class="blog__block col-sm-6">
+                    <div class="blog__media">
+                        <a href="#" target="_blank">
+                            <img src="./images/bg_1.jpg" alt="blog post image">
+                            <div class="mask"><p>View blog</p></div>
+                        </a>
+                        <div class="date">
+                            <p class="day">1</p>
+                            <p class="month">Apr</p>
+                        </div>
+                    </div>
+                    <div class="blog__title">
+                        <h4><a href="#" target="_blank">While My Guitar Gently Weeps - George Harrison</a></h4>
+                    </div>
+                </div>
+                 <!-- Blog post 4 -->
+                 <div class="blog__block col-sm-6">
+                    <div class="blog__media">
+                        <a href="#" target="_blank">
+                            <img src="./images/bg_1.jpg" alt="blog post image">
+                            <div class="mask"><p>View blog</p></div>
+                        </a>
+                        <div class="date">
+                            <p class="day">3</p>
+                            <p class="month">Apr</p>
+                        </div>
+                    </div>
+                    <div class="blog__title">
+                        <h4><a href="#" target="_blank">Wanderlust - Paul McCartney</a></h4>
+                    </div>
+                </div>
+                 <!-- Blog post 5 -->
+                 <div class="blog__block col-sm-6">
+                    <div class="blog__media">
+                        <a href="#" target="_blank">
+                            <img src="./images/bg_1.jpg" alt="blog post image">
+                            <div class="mask"><p>View blog</p></div>
+                        </a>
+                        <div class="date">
+                            <p class="day">10</p>
+                            <p class="month">Apr</p>
+                        </div>
+                    </div>
+                    <div class="blog__title">
+                        <h4><a href="#" target="_blank">Surrender - Cheap Trick</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        © 2021 All rights reserved. Designed by <a href="https://github.com/ryokoko">Stella</a>.</div>
+    </div>
+
+
 </body>
 </html>
