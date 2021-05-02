@@ -9,7 +9,44 @@ window.onload = function() {
         document.getElementById("sidebar").style.width = "0";
     }
 }
+$(document).ready(function() {
+  $(".resume__page").hide();
+  $(".services__page").hide();
+  $(".contact__page").hide();
 
+  $(".tab__home").click(function(){
+  /*   $(".home__page").toggleClass("main__section"); */
+    $(".home__page").show();
+    $(".resume__page").hide();
+    $(".services__page").hide();
+    $(".contact__page").hide();
+  });
+
+    $(".tab__resume").click(function(){
+      /* $(".resume__page").toggleClass("main__section"); */
+      $(".resume__page").show();
+      $(".home__page").hide();
+      $(".services__page").hide();
+      $(".contact__page").hide();
+  });
+  $(".tab__services").click(function(){
+   /*  $(".resume__page").toggleClass("main__section"); */
+    $(".services__page").show();
+    $(".home__page").hide();
+    $(".resume__page").hide();
+    $(".contact__page").hide();
+});
+  $(".tab__contact").click(function(){
+  /*  $(".resume__page").toggleClass("main__section"); */
+   $(".contact__page").show();
+   $(".home__page").hide();
+   $(".resume__page").hide();
+   $(".services__page").hide();
+});
+
+}) 
+
+//Enable Google Maps
 let map;
 
 function initMap() {
@@ -18,3 +55,7 @@ function initMap() {
     zoom: 8,
   });
 }
+
+
+
+
